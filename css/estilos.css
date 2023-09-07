@@ -1,1 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Spline+Sans+Mono&display=swap');
+
+:root{
+    --color1: black;
+
+    --font1: 'Inter', sans-serif;
+    --font2: 'Spline Sans Mono', monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font2);
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none !important;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: inherit;
+}
+
+/* Header */
+
+header{
+    position: fixed;
+    width: 100%;
+    padding: 1em 0;
+    color: white;
+}
+
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-inline: 20px;
+    color: white;
+}
+
+.wrapper a{
+    transition:  all 1s ease;
+}
+
+.wrapper a:hover{
+    color: rgb(214, 202, 24);
+}
+
+ul{
+    display: flex;
+    gap: 2.4em;
+}
+
+.nav-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+a.cta{
+    color: black;
+    background: white;
+    padding: .5em .8em;
+    border-radius: 0 .7em 0 .7em;
+    font-weight: bold;
+}
+
+/* Hero */
+#hero{
+    height: 200vh;
+    background: rgb(7, 4, 24);
+    padding-block: 200px;
+    text-align: center;
+}
