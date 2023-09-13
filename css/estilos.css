@@ -57,13 +57,13 @@ header .wrapper{
     color: white;
 }
 
-.wrapper a{
+.wrapper nav a{
     transition:  all 1s ease;
 }
 
-/* .wrapper a:hover{
+.wrapper nav a:hover{
     color: rgb(214, 202, 24);
-} */
+} 
 
 ul{
     display: flex;
@@ -108,6 +108,11 @@ a.cta:hover{
 
 .intro-titulo{
     padding: 90px;
+    width: 80%;
+}
+
+.intro-titulo p, h2{
+    padding-block: 10px;
 }
 
 #introduccion img{
@@ -121,9 +126,26 @@ a.cta:hover{
 
 }
 
+.intro-general{
+    padding: 90px;
+    padding-left: 400px;
+    /* width: 70%; */
+    text-align: right;
+}
 
+.intro-general p, h2{
+    padding-block: 10px;
+}
 
+/* Nosotros */
+#nosotros{
+    height: 100vh;
+    background: rgb(5, 1, 29);
+}
 
+#nosotros h1{
+    padding: 90px;
+}
 /* Footer */
 
 footer{
