@@ -104,8 +104,8 @@ a.cta:hover{
   
 #hero video{
     z-index: -1;
-    width: 50vw;
-    height: 105vh;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     /* filter: grayscale(70%); */
     /* filter: blur(3px); */
@@ -125,6 +125,9 @@ a.cta:hover{
     top: 45%;
     transform: translateY(-50%);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .content h1, .content h2{
     /* margin-top: 80px; */
@@ -136,33 +139,65 @@ a.cta:hover{
     margin-top: 30px;
 }
 
+.content a{
+    width: 200px;
+    margin-top: 40px;
+    padding: 20px;
+    padding-inline: 15px;
+    border: 3px solid #ddc915;
+    color: #ddc915;
+    font-size: 1.1em;
+    transition: all .4s ease;
+    font-weight: bolder;
+}
+
+.content a:hover{
+    background: #ddc915;
+    color: black;
+}
 /* Introduccion */
 #introduccion{
     height: 100vh;
-    background: rgb(5, 1, 29);
+    /* background: rgb(5, 1, 29); */
+    background: black;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding-block: 30px;
 }
 
-.intro-titulo{
-    padding: 90px;
-    width: 80%;
+.intro-foto{
+    width: 50%;
 }
 
-.intro-titulo p, h2{
+.intro-foto img{
+    height: 150vh;
+    /* width: 30%; */
+}
+
+.intro-info{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-info p, .intro-info h2{
     padding-block: 10px;
-}
-
-#introduccion img{
-    background: transparent;
 }
 
 /* General */
 #general{
     height: 100vh;
     background: rgb(14, 10, 39);
-
+    overflow: hidden;
 }
 
-.intro-general{
+#general img{
+    width: 120vw;
+}
+
+.general-intro{
     padding: 90px;
     padding-left: 400px;
     /* width: 70%; */
