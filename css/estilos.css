@@ -139,7 +139,7 @@ a.cta:hover{
     margin-top: 30px;
 }
 
-.content a{
+#btn-main{
     width: 200px;
     margin-top: 40px;
     padding: 20px;
@@ -149,16 +149,93 @@ a.cta:hover{
     font-size: 1.1em;
     transition: all .4s ease;
     font-weight: bolder;
+    text-align: center;
 }
 
-.content a:hover{
+#btn-main:hover{
     background: #ddc915;
     color: black;
 }
+
+/* Prueba */
+#prueba{
+    height: 120vh;
+    width: 100%;
+    background: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 30px;
+}
+
+/* .prueba-conteiner{
+        position: absolute;
+    width: 90%;
+    height: 80%;
+    background: #1c1c1c;
+    top: 10%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border-radius: 50px;
+} */
+
+.prueba-object{
+    background: #1c1c1c;
+    border-radius: 50px;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    position: relative;
+}
+
+.prueba-card{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-medio{
+    /* background: grey; */
+    border-radius:150px;
+    height: 50%;
+    width: 15%;
+}
+
+.prueba-button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    bottom: -60px;
+    height: 120px;
+    width: 65%;
+    background: #ebeaea;
+    border-radius:150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prueba-button p{
+    color: black;
+    text-align: center;
+    font-family: var(--font1);
+}
+
 /* Introduccion */
 #introduccion{
     height: 100vh;
-    /* background: rgb(5, 1, 29); */
+    /* background: linear-gradient(red 5%, black 10% ,black 100%);  */
+    /* background: #202020; */
     background: black;
     display: flex;
     flex-direction: row;
@@ -168,6 +245,9 @@ a.cta:hover{
 
 .intro-foto{
     width: 50%;
+    transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg); /* IE 9 */
+    -webkit-transform: rotateY(-180deg);
 }
 
 .intro-foto img{
@@ -189,12 +269,15 @@ a.cta:hover{
 /* General */
 #general{
     height: 100vh;
-    background: rgb(14, 10, 39);
+    /* background: rgb(14, 10, 39); */
     overflow: hidden;
 }
 
 #general img{
+    z-index: -1;
     width: 120vw;
+    object-fit: cover;
+
 }
 
 .general-intro{
