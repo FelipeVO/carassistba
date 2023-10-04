@@ -170,6 +170,7 @@ a.cta:hover{
     justify-content: center;
     align-items: center;
     padding-block: 30px;
+    padding-bottom: 70px;
 }
 
 /* .prueba-conteiner{
@@ -202,6 +203,10 @@ a.cta:hover{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.prueba-card h2, .prueba-card p{
+    padding-block: 7px;
 }
 
 .card-medio{
@@ -309,10 +314,6 @@ a.cta:hover{
     height: 25%;
 }
 
-.intro-general p, h2{
-    padding-block: 10px;
-}
-
 .general-conteiner{
     width: 90%;
     height: 70%;
@@ -321,9 +322,19 @@ a.cta:hover{
     justify-content: space-around;
 }
 
+.general-main{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
 .general-cards{
-    height: 80%;
-    width: 30%;
+    height: 50%;
+    width: 90%;
     background: rgba(207, 200, 200, 0.219);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -331,7 +342,14 @@ a.cta:hover{
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: ; */
+    justify-content: space-evenly;
+
+}
+
+.data{
+    height: 100%;
+    width: 30%;
     justify-content: center;
 }
 
@@ -355,11 +373,6 @@ a.cta:hover{
     display: inline-block;
     margin-left: calc( var(--icon-space) * -1 );
     width: var(--icon-space);
-}
-
-.general-medio{
-    height: 95%;
-    width: 35%;
 }
 
 /* Nosotros */
