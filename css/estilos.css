@@ -15,6 +15,11 @@
     color: white;
 }
 
+body{
+    background: #202020;
+}
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -312,6 +317,13 @@ a.cta:hover{
 .general-intro{
     width: 70%;
     height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.general-intro h1{
+    padding-left: 10px;
+    border-left: 3px solid white;
 }
 
 .general-conteiner{
