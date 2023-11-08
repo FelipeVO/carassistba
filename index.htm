@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <script src="https://kit.fontawesome.com/c8452dd290.js" crossorigin="anonymous"></script>
     <title>CarAssistBA</title>
+    
 </head>
 <body>
 <header>
@@ -15,11 +16,11 @@
         <a href="index.htm">CarAssistBA</a>
         <nav>
             <ul>
-                <li class="active"><a href="#hero">Inicio</a></li>
-                <li><a href="#general">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="subpaginas\compra.htm">Comprar</a></li>
-                <li><a href="subpaginas\venta.htm">Cotizar</a></li>
+                <li class="active"><a href="#hero" class="scroll-btn">Inicio</a></li>
+                <li><a href="#general" onclick="myFunction" class="scroll-btn">Servicios</a></li>
+                <li><a href="#nosotros" class="scroll-btn">Nosotros</a></li>
+                <li><a href="subpaginas\compra.htm" class="scroll-btn">Comprar</a></li>
+                <li><a href="subpaginas\venta.htm" class="scroll-btn">Cotizar</a></li>
             </ul>
         </nav>
         <a href="subpaginas\venta.htm" class="cta">Vender</a>
@@ -51,17 +52,17 @@
         <div class="intro-cards">
             <h3>Quiero Comprar</h3>
             <div>
-                <p>Lo ayudamos a comprar su auto al mejor precio del mercado </p>
-                <p>Nos encargamos de los trámites administrativos que se necesitan para transferir un auto. <br> 
-                    Usted paga solo cuando el trámite se completa.</p>
+                <p>Lo ayudamos a comprar su auto al <mark>mejor precio</mark> del mercado </p>
+                <p>Nos encargamos de los trámites administrativos que se necesitan para transferir un automovil. <br> 
+                    Usted realiza el pago <mark>unicamente</mark> cuando el trámite se haya completado.</p>
             </div>
             <a href="subpaginas\compra.htm">Saber Más</a>
         </div>
         <div class="intro-cards">
             <h3>Quiero Vender</h3>
             <div>
-                <p>Nos encargamos de simplificarlo para usted, cuidando su tiempo y <br> protegiendo su capital.</p>
-                <p>Le dedicamos la atencion a todos los detalles para completar su tramite</p>
+                <p>Nos encargamos de <mark>simplificarlo</mark> para usted, <mark>cuidando su tiempo</mark> y <br> protegiendo su capital.</p>
+                <p>Dedicamos la <mark>atención</mark> a todos los detalles para completar su tramite</p>
             </div>
             <a href="subpaginas\venta.htm">Saber Más</a>
         </div>
@@ -79,7 +80,7 @@
 <section id="prueba">
         <div class="prueba-object">
             <div class="prueba-card">
-                <h2>Encuentra TU auto ideal con nosotros</h2>
+                <h2>Encuentra tu auto ideal con nosotros</h2>
                 <p>Trabajamos en conjunto para lograr la mejor transacción.</p>
                 <a href="#introduccion" id="btn-main">EXPLORAR</a>
             </div>
@@ -102,7 +103,7 @@
             </div>
             <div class="prueba-button">
                 <!-- <p>Nos encargamos del proceso, tramites e informacion necesaria para vender o comprar</p> -->
-                <p>Queremos que nos recomienden y vuelvan a ser nuestros clientes. </p>
+                <p>Queremos que nos recomienden y vuelvan a ser nuestros clientes </p>
             </div>
         </div>
 </section>
@@ -110,7 +111,7 @@
 <section id="general">
     <img src="assets\ruta.jpg" alt="">
     <div class="general-intro">
-        <h1>Tu solucion en un solo lugar</h1>
+        <h1>Tu solución en un solo lugar</h1>
     </div>
 
     <div class="general-conteiner">
@@ -134,7 +135,7 @@
 
         <div class="general-cards data">
             <div>
-                <h4>Servicio Premium</h4>
+                <h3>Servicio Premium</h3>
             </div>
             <ul>
                 <li>Verificación policial</li>
@@ -148,7 +149,7 @@
                 <li>Levantamiento de prendas</li>
                 <li>Asesoramiento Legal (Inhibiciones, Sucesiones)</li>
                 <li>Tramite de transferencia en Registro de la Propiedad Automotor</li>
-                <li>Requisitos</li>
+                <li><a href="https://www.dnrpa.gov.ar/portal_dnrpa/" target="_blank">Requisitos</a></li>
                 <!-- - Página Web https: www.dnrpa.gov.ar/portal_dnrpa/ -->
             </ul>
         </div>
@@ -156,12 +157,53 @@
 </section>
 
 <section id="nosotros">
-    <h1>Nosotros</h1>
+    <div class="nosotros-intro">
+        <h1>Nosotros</h1>
+        <div>
+            <p>Dedicamos todo nuestro tiempo y atencion en conseguir exactamente lo que usted quiere.</p>
+            <p>Destacamos de la competencia gracias a nuestro excelente servicio y familiaridad</p>
+        </div>
+    </div>
 
+    <div class="nosotros-box">
+        <div class="nosotros-cards">
+            <div class="nosotros-cards-img">
+
+            </div>
+            <h4>Marcos Fernández Roth </h4>
+            <p>25 años</p>
+            <p>Estudiante de quinto año de <mark>Ingeniería Automotriz en la U.T.N.</mark> Antiguamente <mark>responsable</mark> de la venta de vehículos usados de RDA Renting S.A. <br> Hoy dirige su <mark>emprendimiento</mark> CarAssistba S.A
+            </p>
+        </div>
+        <div class="nosotros-cards">
+            <div class="nosotros-cards-img">
+
+            </div>
+            <h4>Diógenes Fernández Roth </h4>
+            <p>28 años</p>
+            <p>Ocupo el cargo de <mark>Jefe de Ventas</mark> de vehículos usados del Grupo Rusoniello S.A. de agencias multimarca <mark>Audi, Jeep, Kia, VW.</mark> </p>
+        </div>
+    </div>
 </section>
 
 <footer>
-
+    <div class="footer-box">
+        <div class="footer-card">
+            <h4>CarrAssist</h4>
+            <p>Asesoramiento en Compra y Venta de vehículos </p>
+        </div>
+        <div class="footer-card">
+            <h4>Contacto</h4>
+            <a href=""><i class="fa-regular fa-envelope"></i> carassistba@gmail.com</a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i> +54 11 9999 9999</a>
+        </div>
+        <div class="footer-card">
+            <h4>Servicios</h4>
+            <a href=""><i class="fa-solid fa-chevron-right"></i> Compra</a>
+            <a href=""><i class="fa-solid fa-chevron-right"></i> Venta</a>
+        </div>
+    </div>
+    <p>Desarollado por <a href="https://www.linkedin.com/in/felipevarelaolid/" target="_blank">Felipe Varela Olid</a></p>
 </footer>
 </body>
 </html>
