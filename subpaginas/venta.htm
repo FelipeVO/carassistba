@@ -34,16 +34,24 @@
     </div>
 
     <form action="" class="form">
-      
-        <input type="text" placeholder="Name" class="form__input" id="name" />
-        <label for="name" class="form__label">Nombre</label>
-  
-        <input type="email" placeholder="Email" class="form__input" id="email" />
-        <label for="email" class="form__label">Email</label>
-  
-        <input type="text" placeholder="Subject" class="form__input" id="subject" />
-        <label for="subject" class="form__label">Mensaje</label>
-        
+        <div class="form-div" id="titulo">
+            <input type="text" placeholder="Titulo" class="form__input" />
+            <label for="titulo" class="form__label">Titulo</label>    
+        </div>
+
+        <div class="form-div" id="name">
+            <input type="text" placeholder="Name" class="form__input"/>
+            <label for="name" class="form__label">Nombre</label>
+        </div>
+        <div class="form-div" id="email">
+            <input type="email" placeholder="Email" class="form__input"/>
+            <label for="email" class="form__label">Email</label>
+        </div>
+        <div class="form-div" id="subject">
+            <textarea placeholder="Subject" class="form__input"></textarea>
+            <!-- <input type="textarea" placeholder="Subject" class="form__input"/> -->
+            <label for="subject" class="form__label">Mensaje</label>
+        </div>
       </form>
 </section>
 
