@@ -544,6 +544,22 @@ footer{
     justify-content: center;
 }
 
+.form-compra h1::before{
+    content: "Quiero Comprar";
+    color: #ddc915;
+    font-weight: 400;
+    font-size: .4em;
+    display: block;
+}
+
+.form-venta h1::before{
+    content: "Quiero Vender";
+    color: #ddc915;
+    font-weight: 400;
+    font-size: .4em;
+    display: block;
+}
+
 .form {
     height: 80%;
     width: 50%;
